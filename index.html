@@ -23,7 +23,7 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 1rem 5%;
+            padding: 1rem 2rem;  /* Smaller padding to ensure proper spacing */
             background-color: #f8f8f8;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
             position: fixed;
@@ -32,11 +32,11 @@
             z-index: 1000;
         }
 
-        /* Adjust Title */
+        /* Properly Align Title */
         .title {
             font-size: 1.5rem;
             font-weight: bold;
-            flex-shrink: 0;
+            margin-left: 0; /* Ensures it's flush with the left edge */
         }
 
         .title a {
@@ -49,16 +49,16 @@
             color: navy;
         }
 
-        /* Navbar Fix */
+        /* Navbar Properly Aligned */
         nav {
             flex-grow: 1;
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;  /* Keeps the menu aligned */
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: flex-end;
             gap: 2rem;
             margin: 0;
             padding: 0;
@@ -122,7 +122,7 @@
         }
 
         input, textarea {
-            width: 100%;
+            width: calc(100% - 2px);  /* Ensures perfect alignment */
             padding: 1rem;
             border: 1px solid #ccc;
             border-radius: 8px;
