@@ -8,35 +8,23 @@
         body {
             margin: 0;
             font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: white;
             color: #333;
-            background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
-        /* Fixed Header */
+        /* Header (EXACTLY as in your working page) */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
-            padding: 1rem 2rem;  /* Smaller padding to ensure proper spacing */
+            padding: 1rem 2rem;
             background-color: #f8f8f8;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
         }
 
-        /* Properly Align Title */
         .title {
             font-size: 1.5rem;
             font-weight: bold;
-            margin-left: 0; /* Ensures it's flush with the left edge */
         }
 
         .title a {
@@ -49,23 +37,12 @@
             color: navy;
         }
 
-        /* Navbar Properly Aligned */
-        nav {
-            flex-grow: 1;
-            display: flex;
-            justify-content: flex-end;  /* Keeps the menu aligned */
-        }
-
         nav ul {
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
             margin: 0;
             padding: 0;
-        }
-
-        nav ul li {
-            margin: 0;
         }
 
         nav ul li a {
@@ -79,40 +56,28 @@
             color: navy;
         }
 
+        /* Main Section */
         main {
-            margin-top: 120px;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            height: auto;
-            justify-content: center;
-        }
-
-        /* Contact Title Styling */
-        .contact-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: white;
             text-align: center;
-            margin-bottom: 2rem;
         }
 
-        /* Contact Form Container */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Form Container (EXACT same style as other containers) */
         .container {
-            background: #fafafa;
+            background-color: #fafafa;
             padding: 2rem;
             border-radius: 25px;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 90%;
-        }
-
-        p {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 1.5rem;
         }
 
         form {
@@ -122,21 +87,16 @@
         }
 
         input, textarea {
-            width: calc(100% - 2px);  /* Ensures perfect alignment */
-            padding: 1rem;
+            width: calc(100% - 2px);
+            padding: 0.8rem;
             border: 1px solid #ccc;
             border-radius: 8px;
             font-size: 1rem;
-            color: #333;
-        }
-
-        textarea {
-            resize: none;
         }
 
         button {
             background: navy;
-            color: #fff;
+            color: white;
             border: none;
             padding: 1rem;
             font-size: 1rem;
@@ -150,14 +110,9 @@
             background: #0055aa;
         }
 
-        /* Mobile Fix */
         @media (max-width: 768px) {
-            header {
-                padding: 1rem 3%;
-            }
-
-            nav ul {
-                gap: 1rem;
+            .container {
+                width: 90%;
             }
         }
     </style>
@@ -168,14 +123,15 @@
         <nav>
             <ul>
                 <li><a href="https://wmlver1.netlify.app">Inicio</a></li>
+                <li><a href="https://wmlisabella.netlify.app">Isabella</a></li>
                 <li><a href="https://wmlservicios.netlify.app">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div class="contact-title">Contacto</div>
+        <h1>Contacto</h1>
         <section class="container">
             <p>Déjanos tu mensaje y te responderemos lo antes posible.</p>
             <form name="contact" method="POST" data-netlify="true">
