@@ -8,69 +8,27 @@
         body {
             margin: 0;
             font-family: "Helvetica Neue", Arial, sans-serif;
-            background-color: white;
+            background: url('https://imgur.com/cLOuBYe.PNG') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
 
-        /* Header (EXACTLY as in your working page) */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: #f8f8f8;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .title a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s;
-        }
-
-        .title a:hover {
-            color: navy;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: navy;
-        }
-
-        /* Main Section */
         main {
             padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            min-height: 100vh;
+            justify-content: center;
         }
 
         h1 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: white;
         }
 
-        /* Contact Form Container (EXACT same style as other containers) */
         .container {
             background-color: #fafafa;
             padding: 2rem;
@@ -78,6 +36,7 @@
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 90%;
+            margin: auto;
         }
 
         form {
@@ -87,7 +46,7 @@
         }
 
         input, textarea {
-            width: calc(100% - 2px);
+            width: 100%;
             padding: 0.8rem;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -104,6 +63,7 @@
             border-radius: 8px;
             cursor: pointer;
             transition: background 0.3s;
+            width: 100%;
         }
 
         button:hover {
